@@ -1,7 +1,8 @@
 <?php 
-    $nome = "Pedro";
-    echo "É verdade que seu nome é $nome?";
-    
-    $salário = 2500.75;
-    echo "Seu salário é $salário."
+    $nome = "Rodrigo";
+    $sobrenome = "Nogueira";
+    $apelido = " \"Minotauro\"";
+    $cidade = "Los Angeles";
+
+    echo "$nome$apelido<br>$sobrenome";
 ?>
