@@ -1,21 +1,7 @@
 <?php 
-    $nome = "Márcio";
-    $sobrenome = "Diniz";
-
-    const PAIS = "Brasil";
-
-    //
-    //
-    //
-    //
-
-    //
-
-    // PAIS = "EUA";
-
-    //
-    //
-    //
-    //
-
-    echo "Muito prazer, $nome $sobrenome! Você mora no " . PAIS;
+    $nome = "Pedro";
+    echo "É verdade que seu nome é $nome?";
+    
+    $salário = 2500.75;
+    echo "Seu salário é $salário."
+?>
