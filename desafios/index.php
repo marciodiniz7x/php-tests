@@ -25,14 +25,17 @@
     </section>
 
     <section class="desafios desafio002">
+
         <h1>Desafio 02</h1>
-           
-        <?php
-        include 'd002.php';
-        ?>
-           
-        <a href="index.php" class="submits">Gerar Outro</a>
-        
+        <div>
+            <form action="d002.php" method="get">
+                <label for="numero">
+                    <span>Gere um número aleatório entre 0 e 100:</span>
+                </label>
+                <input type="submit" value="Gerar" id="aleatorio" class="submits">
+            </form>
+        </div>
+
     </section>
 
 </body>

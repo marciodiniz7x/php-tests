@@ -47,49 +47,38 @@ section div label {
 }
 
 .desafios .submits {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #1E40AF;
     color: white;
     border: none;
     height: 40px;
     width: 100%;
     border-radius: 0.4rem;
-    font-size: 18px;
+    font-size: 1.1rem;
     transition: 300ms;
     cursor: pointer;
     text-decoration: none;
 }
-
-/* .desafios a {
-    background-color: #1E40AF;
-    color: white;
-    border-radius: 0.3rem;
-    text-decoration: none;
-    transition: 300ms;
-    height: 40px;
-    width: 100%;
-    text-align: center;
-} */
 
 .desafios .submits:hover {
     background-color: #092992;
 }
 
 main div {
-    width: 280px;
-
+    min-width: 280px;
+    width: 100%;
 }
 
 main a {
     background-color: #1E40AF;
     color: white;
     border-radius: 0.3rem;
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     transition: 300ms;
-    width: 250px;
+    height: 50px;
+    width: 100%;
     text-align: center;
 }
 
