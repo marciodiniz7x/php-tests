@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
 }
 
 section, main {
@@ -79,4 +80,13 @@ main a {
 main a:hover {
     background-color: #092992;
 
+}
+
+/* DESAFIO 002 */
+
+.desafio002 #numero {
+    width: 300px;
+    height: 40px;
+    border-radius: 0.4rem;
+    border: 1px solid #2b0544;
 }
