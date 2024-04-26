@@ -35,29 +35,45 @@ section div form {
 
 }
 
-section div form label {
+section div label {
     display: inline-block;
 }
 
-.desafio001 #numero {
+.desafios #numero {
     width: 300px;
     height: 40px;
     border-radius: 0.4rem;
     border: 1px solid #2b0544;
 }
 
-section div form #calcular {
+.desafios .submits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #1E40AF;
     color: white;
     border: none;
     height: 40px;
+    width: 100%;
     border-radius: 0.4rem;
-    font-size: 1rem;
+    font-size: 18px;
     transition: 300ms;
     cursor: pointer;
+    text-decoration: none;
 }
 
-section div form #calcular:hover {
+/* .desafios a {
+    background-color: #1E40AF;
+    color: white;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    transition: 300ms;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+} */
+
+.desafios .submits:hover {
     background-color: #092992;
 }
 
@@ -79,14 +95,4 @@ main a {
 
 main a:hover {
     background-color: #092992;
-
-}
-
-/* DESAFIO 002 */
-
-.desafio002 #numero {
-    width: 300px;
-    height: 40px;
-    border-radius: 0.4rem;
-    border: 1px solid #2b0544;
 }
