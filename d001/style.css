@@ -7,12 +7,13 @@ body {
     background-attachment: fixed;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section {
+section, main {
     background-color: #18181B;
     border: 0.2rem solid #1E40AF;
 
@@ -20,7 +21,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1rem 2rem;
     max-width: 700px;
     border-radius: 1rem;
     box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
@@ -45,7 +46,7 @@ section div form label {
 }
 
 section div form #calcular {
-    background-color: #06a70e;
+    background-color: #1E40AF;
     color: white;
     border: none;
     height: 40px;
@@ -56,19 +57,26 @@ section div form #calcular {
 }
 
 section div form #calcular:hover {
-    background-color: #52ec5a;
+    background-color: #092992;
 }
 
-section a {
+main div {
+    width: 280px;
+
+}
+
+main a {
     background-color: #1E40AF;
     color: white;
     border-radius: 0.3rem;
     padding: 1rem;
     text-decoration: none;
     transition: 300ms;
+    width: 250px;
+    text-align: center;
 }
 
-section a:hover {
+main a:hover {
     background-color: #092992;
 
 }
