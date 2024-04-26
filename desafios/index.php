@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,10 @@
 <body>
     <h1>Desafios</h1>
     <section class="desafios desafio001">
-        <h1>Desafio 01</h1>
+        <div class="title">
+            <h1>Desafio 01</h1>
+            <h4>Antecessor e Sucessor</h4>
+        </div>
 
         <div>
             <form action="d001.php" method="get">
@@ -26,13 +29,34 @@
 
     <section class="desafios desafio002">
 
-        <h1>Desafio 02</h1>
+        <div class="title">
+            <h1>Desafio 02</h1>
+            <h4>Números Aleatórios</h4>
+        </div>
         <div>
             <form action="d002.php" method="get">
                 <label for="numero">
                     <span>Gere um número aleatório entre 0 e 100:</span>
                 </label>
                 <input type="submit" value="Gerar" id="aleatorio" class="submits">
+            </form>
+        </div>
+
+    </section>
+
+    <section class="desafios desafio003">
+
+        <div class="title">
+            <h1>Desafio 03</h1>
+            <h4>Conversor de Moedas</h4>
+        </div>
+        <div>
+            <form action="d003.php" method="get">
+                <label for="numero">
+                    <span>Quantos reais você tem na carteira?</span>
+                </label>
+                <input type="text" name="numero" id="numero">
+                <input type="submit" value="Converter" id="aleatorio" class="submits">
             </form>
         </div>
 
