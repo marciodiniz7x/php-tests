@@ -12,7 +12,7 @@
     </header>
     <section>
         <form action="cad.php" method="get">
-            <label for="none">Nome </label>
+            <label for="nome">Nome </label>
             <input type="text" name="nome" id="idnome" required>
             <label for="sobrenome">Sobrenome</label>
             <input type="text" name="sobrenome" id="idsobrenome" required>
