@@ -13,7 +13,7 @@
     <main class="resultado">
         <div>
         <?php 
-            $numero = $_GET["numero"] ?? "Inválido";
+            $numero = $_REQUEST["numero"] ?? "Inválido";
             $antecessor = $numero - 1;
             $sucessor = $numero + 1;
 

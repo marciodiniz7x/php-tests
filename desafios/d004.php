@@ -17,7 +17,7 @@
             $numero = $_GET['numero'] ?? "Número inválido";
             $numero = str_replace(',', '.', $numero);
             $numero = floatval($numero);
-            $converteParaDolar = $numero * 5.12;
+            $converteParaDolar = $numero / 5.12;
             $converteParaDolar = number_format($converteParaDolar, 2);
             $converteParaDolar = str_replace('.', ',', $converteParaDolar);
             $numero = number_format($numero, 2);
