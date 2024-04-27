@@ -62,6 +62,43 @@
 
     </section>
 
+    <section class="desafios desafio004">
+
+        <div class="title">
+            <h1>Desafio 04</h1>
+            <h4>Conversor de Moedas com API</h4>
+        </div>
+        <div>
+            <form action="d004.php" method="get">
+                <label for="numero">
+                    <span>Quantos reais você tem na carteira?</span>
+                </label>
+                <input type="text" name="numero" id="numero">
+                <input type="submit" value="Converter" class="submits">
+            </form>
+        </div>
+
+    </section>
+
+    <section class="desafios desafio005">
+
+        <div class="title">
+            <h1>Desafio 05</h1>
+            <h4>Analisador de Número Real</h4>
+        </div>
+        <div>
+            <form action="d005.php" method="get">
+                <label for="numero">
+                    <span>Digite um número real:</span>
+                </label>
+                <input type="text" name="numero" id="numero">
+                <input type="submit" value="Analisar" class="submits">
+            </form>
+
+        </div>
+
+    </section>
+
 </body>
 
 </html>
