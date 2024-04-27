@@ -14,13 +14,13 @@
         <div class="resultado">
             <?php 
             
-            $numero = $_GET['numero'] ?? 0;
-            $converteParaDolar = $numero / 5.12;
-            $converteParaDolar = number_format($converteParaDolar, 2, ',', '.');
-            $numero = number_format($numero, 2, ',', '.');
+            $valor = $_GET['numero'] ?? 0;
+            $cotacao = 5.12;          
+            $valorConvertido = $valor / $cotacao;           
+            $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
 
-            echo "Seus R$ $numero equivalem a <strong>US$ $converteParaDolar</strong>
-            <p><strong>* Cotação fixa de R$ 5,12 </strong>informada diretamenta no código. </p> "
+            echo "Seus R$ " . numfmt_format_currency($padrao, $valor, "BRL") . " equivalem a " . numfmt_format_currency($padrao, $valorConvertido, "USD") . 
+            " <p><strong>* Cotação fixa de R$ 5,12 </strong>informada diretamenta no código. </p> "
             ?>
         </div>
         <a href="javascript:history.go(-1)">&#8592; Voltar aos desafios</a>

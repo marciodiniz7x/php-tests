@@ -55,7 +55,7 @@
                 <label for="numero">
                     <span>Quantos reais você tem na carteira?</span>
                 </label>
-                <input type="text" name="numero" id="numero">
+                <input type="number" name="numero" id="numero" step="0.01">
                 <input type="submit" value="Converter" id="aleatorio" class="submits">
             </form>
         </div>
@@ -69,11 +69,11 @@
             <h4>Conversor de Moedas com API</h4>
         </div>
         <div>
-            <form action="d004.php" method="get">
+            <form action="d004-api.php" method="get">
                 <label for="numero">
                     <span>Quantos reais você tem na carteira?</span>
                 </label>
-                <input type="number" name="numero" id="numero">
+                <input type="number" name="numero" id="numero" step="0.01">
                 <input type="submit" value="Converter" class="submits">
             </form>
         </div>
