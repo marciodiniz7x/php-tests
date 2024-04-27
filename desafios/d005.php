@@ -16,14 +16,14 @@
             $numero = $_GET['numero'] ?? "Digite um número válido";
             $numero = str_replace(',', '.', $numero);
             $numero = floatval($numero);
-            $numero = number_format($numero, 3);
 
             $numInt = intval($numero);
             $numFrac = fmod($numero, 1);
 
-            $numero = str_replace('.', ',', $numero);
+            $numeroFormatado = number_format($numero, 3);
+            $numeroFormatado = str_replace('.', ',', $numeroFormatado);
             echo "
-            <p>Analisando o número <strong>$numero</strong> informado pelo usuário:</p>
+            <p>Analisando o número <strong>$numeroFormatado</strong> informado pelo usuário:</p>
             <p>• A parte inteira do número é <strong>$numInt</strong> </p>
             <p>• A parte fracionária do número é <strong>$numFrac</strong> </p>
             ";
