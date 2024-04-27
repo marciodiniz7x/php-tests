@@ -14,14 +14,11 @@
         <div class="resultado">
             <?php 
             
-            $numero = $_GET['numero'] ?? "Número inválido";
-            $numero = str_replace(',', '.', $numero);
-            $numero = floatval($numero);
+            $numero = $_GET['numero'] ?? 0;
             $converteParaDolar = $numero / 5.12;
-            $converteParaDolar = number_format($converteParaDolar, 2);
-            $converteParaDolar = str_replace('.', ',', $converteParaDolar);
-            $numero = number_format($numero, 2);
-            $numero = str_replace('.', ',', $numero);
+            $converteParaDolar = number_format($converteParaDolar, 2, ',', '.');
+            $numero = number_format($numero, 2, ',', '.');
+
             echo "Seus R$ $numero equivalem a <strong>US$ $converteParaDolar</strong>
             <p><strong>* Cotação fixa de R$ 5,12 </strong>informada diretamenta no código. </p> "
             ?>

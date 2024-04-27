@@ -73,7 +73,7 @@
                 <label for="numero">
                     <span>Quantos reais você tem na carteira?</span>
                 </label>
-                <input type="text" name="numero" id="numero">
+                <input type="number" name="numero" id="numero">
                 <input type="submit" value="Converter" class="submits">
             </form>
         </div>
