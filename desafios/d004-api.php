@@ -14,7 +14,7 @@
         <div class="resultado">
             <?php 
 
-            
+            // Cotação vinda da API do Banco Central
             $inicio = date('m-d-Y', strtotime("-7 days"));
             $fim = date('m-d-Y');
 
@@ -23,7 +23,7 @@
             $dados = json_decode(file_get_contents($url), true);
             $cotacao = $dados["value"][0]["cotacaoCompra"]; 
 
-
+            // Tratamento de dados do usuário
             $valor = $_GET['numero'] ?? 0;         
             $valorConvertido = $valor / $cotacao;
             
